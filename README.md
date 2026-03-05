@@ -5,15 +5,15 @@
 
 ## Team Details
 
-- **Team Name:**
-- **Members:**
-- **Domain:**
+- **Team Name: Team ATLAS**
+- **Members: Mrugesh Kulkarni, Vaidehi Nandeshwar, Aryan Potpose**
+- **Domain: FinTech & Money Management**
 
 ---
 
 ## Project
 
-**Problem:** 
+**Problem: Snapbudget OCR ** 
 
 **Solution:** 
 
