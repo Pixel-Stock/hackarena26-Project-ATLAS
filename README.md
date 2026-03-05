@@ -15,7 +15,7 @@
 
 **Problem: Snapbudget OCR** 
 
-**Solution:** 
+**Solution: SnapBudget is an AI-powered receipt scanner that automatically logs and categorizes your expenses — zero manual entry. Snap any receipt (torn, faded, crumpled) and the app splits it line-by-line into categories like Food, Health, and Home using OCR and an LLM. It also features CrowdTag, a collective intelligence mesh where merchant categories learned from one user automatically apply to all future users — making the app smarter with every single scan.** 
 
 ---
 
