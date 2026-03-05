@@ -13,7 +13,7 @@
 
 ## Project
 
-**Problem: Snapbudget OCR ** 
+**Problem: Snapbudget OCR** 
 
 **Solution:** 
 
