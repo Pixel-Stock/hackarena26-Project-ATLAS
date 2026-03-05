@@ -1,0 +1,52 @@
+# ─── Python ─────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ─── IDE ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Large files / installers ───────────────
+*.exe
+Python-3.12.13/
+
+# ─── Training data (too large for git) ──────
+Created_Images_With_Tilt_and_Contract/
+
+# ─── ML models > 50MB ──────────────────────
+files/models/*.h5
+files/models/atlas_receipt_savedmodel/
+files/models/keras_dummy/
+files/models/logs/
+
+# ─── Keep these ML files ───────────────────
+!files/models/atlas_receipt_model.onnx
+!files/models/atlas_receipt_model.tflite
+!files/models/class_labels.json
+!files/models/model_metadata.json
+!files/models/*.png
+!files/models/*.csv
+
+# ─── Environment ────────────────────────────
+.env
+.env.local
+.env.production
+.env*.local
+
+# ─── Node ───────────────────────────────────
+node_modules/
+.next/
+out/
