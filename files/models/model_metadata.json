@@ -1,0 +1,65 @@
+{
+  "model_name": "atlas_receipt_model",
+  "version": "1.0.0",
+  "trained_at": "2026-03-05T15:46:29.367490",
+  "input": {
+    "shape": [
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "preprocessing": "divide_by_255",
+    "description": "RGB image normalized to [0,1]"
+  },
+  "output": {
+    "num_classes": 2,
+    "class_names": [
+      "MasksImages",
+      "PNGImages"
+    ],
+    "activation": "sigmoid",
+    "confidence_note": "For binary: output is P(positive). For multiclass: max(softmax) is confidence."
+  },
+  "thresholds": {
+    "high_confidence": 0.85,
+    "medium_confidence": 0.6,
+    "reject_below": 0.6,
+    "behavior": {
+      ">=0.85": "auto-accept, show green badge",
+      ">=0.6 and <0.85": "show to user for confirmation, amber badge",
+      "<0.6": "reject, prompt user to retake photo"
+    }
+  },
+  "training": {
+    "dataset_path": "..\\Created_Images_With_Tilt_and_Contract",
+    "epochs": 1000000,
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "fine_tune_at": 100,
+    "fine_tune_epochs": 1,
+    "base_model": "MobileNetV2 (ImageNet weights)",
+    "augmentation": [
+      "rotation_range=20 (tilt simulation)",
+      "brightness_range=[0.5, 1.5] (faded / overexposed)",
+      "channel_shift_range=30 (contrast variation)",
+      "shear_range=10 (perspective distortion)",
+      "zoom_range=0.15"
+    ]
+  },
+  "performance": {
+    "test_accuracy": 0.999992,
+    "auc_roc": 1.0,
+    "confidence_distribution": {
+      "high_pct": 0.567,
+      "medium_pct": 0.364,
+      "low_pct": 0.069
+    }
+  },
+  "atlas_integration": {
+    "pipeline_file": "lib/ai/pipeline.ts",
+    "model_file": "lib/ai/custom-model.ts",
+    "tfjs_model_path": "public/models/atlas-receipt-v1/model.json",
+    "server_usage": "onnxruntime-node with atlas_receipt_model.onnx"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hackarena267",
+  "private_key_id": "17d7f846610274d04e9d62286b14564213113156",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDae6ON1zN/NbNq\n3NNdyXaXP5yTkjRc4PRivtvX6JrU1eFuIvWgH11gJubGc0sb0aSsgJCsJkBSs63x\n5vWiubGtlWbyYzulcubOLaTB0mTv1zsuOJuKq4aSLacly5w1T4823mCHKj3n30Sj\ndm4OKpjgENYkSn5k79gSAOWTKUfe1QzY1V+F9bb88izvAGxzPfFb2y3GtS1cV/J1\nHnpO+N460G4euwH982yYrqIJUEnmYv31xZ1TTKNPqfjaIGiS3MMTdlePO9B69Hwd\nyEXnKPRuwMIyPCynv4qXqHA41Jui+1FJ0YPlaYef15t1HE522coTaeZf9SkNDbOc\nq5Fl51PlAgMBAAECggEABndPc0X0cqDF/H+9wKzoSy3Ohj6MOVh4sHMfbK/SuexS\nNZEoIv2dT5hvJDNAJzoIjTNpNLMVccJ6v39F80jayufySfJTuaqMIqYkALl86Rfo\nsDjsKjSNMRvT8nt+Fhon7f2IWU+6e8zg35PvH2ZgK7d2gvtHwNh+qk+8+6KRNjVw\nGpspXdHJtQp9RcUCoMAYFGvCKZ226vW/2d6k6CRt+stm5O0V52bWpKbrGBjo9D3N\n5sYO4ePUv/4p+VtRkPipIKneJkozKicD39aKhIriiUHOhwmyhaFFLe6a0G0DKjz6\nsz5YzzsPPZhJYZr8gi+Nmay59CeTp95ZNTIh9T7b6QKBgQD8WbYbsXHNQUExGdFW\ncDJDaBXw5CqxOx2ZExju/aUAWGLJumpmj1x/OaPzWAy1ZjEYd0/9ZqU9l1hqUnek\nAM50s2kifGxWEW2LkFBKrwC+gAzaQE7tB9CMJq8ZaUKpFIz1SB1PWRZwc+ia8mPl\nhQ5NNTs/au2GwQhpssZNbvL+jQKBgQDdpInWUPsSZZOpx5Ls/tkE1K0Epym5DUPK\nB3fXb7ptNwPAqOgmmmNm/6ai/M3XPoe8NzmJ+jhr9Sdsm0PDjajLha31k++Lybuk\nmjdymgcBanNOBkoBbTZCVT297sZjriTZyG/zLqn8Xm0TKDSmVvzj4wL7ATDLhGO8\nx9S5jFrguQKBgFHvUvi06a1qVZ96sYSuUzOdtRoNC2uWNSsBj2PxyURObmzvcSKx\nw6evcHNPkHjJoIFAJCGz1U0lOdjzw9LlTCOKKUXAPnDHodjh16AYKFayPvoSTU4a\n7nTDDrFigvlhKc9uRc4AsA99IvZEY3kfdaBN+1nA/zR0sqWXHVoA/zb1AoGBAJoF\nSxu5bp/cIn7rBvjWKC0pNYp0N5Q22ZK9GdSF+cEHZ/4r4hdhVg4vPbcpgkk/VMfA\ngKWXUjoDRIA+bRqpiFDV9osfYGl9qH28BSgITTH4rWPdDvRq1jfGUH96PDbsvwLw\nPIt7M/kCDT4wxFWLQXWDPYD71NK4jy6SlwrRtB1RAoGAUnMzGEweMMnFXYMDn+yu\nqGENRa2pbaEQlQA3quOQJ6Phz3OIH3BaQZOmoCtJ2shN6YhjBgVD6kQT9HdlHAT+\nhO2EVBfhq+IwO7fjDeybtbrix553OzBa8AQPyDu1dpFraUntbjJhAkge2OEIMba3\n2n7MgAczaNg1CeOOVsfhnw4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ocr-test-hack-arena@hackarena267.iam.gserviceaccount.com",
+  "client_id": "111361078923553525487",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ocr-test-hack-arena%40hackarena267.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
