@@ -1,0 +1,11 @@
+{
+  "db": {
+    "success": true
+  },
+  "storage": {
+    "success": false,
+    "error": "new row violates row-level security policy",
+    "name": "StorageApiError",
+    "status": "403"
+  }
+}

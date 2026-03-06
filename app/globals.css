@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --card: #faf9f5;
+    --ring: #c96442;
+    --input: #b4b2a7;
+    --muted: #ede9de;
+    --accent: #e9e6dc;
+    --border: #dad9d4;
+    --radius: 0.5rem;
+    --chart-1: #b05730;
+    --chart-2: #9c87f5;
+    --chart-3: #ded8c4;
+    --chart-4: #dbd3f0;
+    --chart-5: #b4552d;
+    --popover: #ffffff;
+    --primary: #c96442;
+    --sidebar: #f5f4ee;
+    --secondary: #e9e6dc;
+    --background: #faf9f5;
+    --foreground: #3d3929;
+    --destructive: #dc2626;
+    --sidebar-ring: #b5b5b5;
+    --sidebar-accent: #e9e6dc;
+    --sidebar-border: #ebebeb;
+    --card-foreground: #141413;
+    --sidebar-primary: #c96442;
+    --muted-foreground: #83827d;
+    --accent-foreground: #28261b;
+    --popover-foreground: #28261b;
+    --primary-foreground: #ffffff;
+    --sidebar-foreground: #3d3d3a;
+    --secondary-foreground: #535146;
+    --destructive-foreground: #ffffff;
+    --sidebar-accent-foreground: #343434;
+    --sidebar-primary-foreground: #fbfbfb;
+  }
+
+  .dark {
+    --card: #1c1b17;
+    --ring: #c96442;
+    --input: #4a4940;
+    --muted: #2a2920;
+    --accent: #33312a;
+    --border: #3d3b34;
+    --chart-1: #d4774f;
+    --chart-2: #b09df7;
+    --chart-3: #5a5544;
+    --chart-4: #7b6fc4;
+    --chart-5: #d4663a;
+    --popover: #1c1b17;
+    --primary: #c96442;
+    --sidebar: #151410;
+    --secondary: #2a2920;
+    --background: #141310;
+    --foreground: #e8e5d8;
+    --destructive: #ef4444;
+    --sidebar-ring: #4a4940;
+    --sidebar-accent: #2a2920;
+    --sidebar-border: #3d3b34;
+    --card-foreground: #e8e5d8;
+    --sidebar-primary: #c96442;
+    --muted-foreground: #9c9a92;
+    --accent-foreground: #e8e5d8;
+    --popover-foreground: #e8e5d8;
+    --primary-foreground: #ffffff;
+    --sidebar-foreground: #c8c5b8;
+    --secondary-foreground: #c8c5b8;
+    --destructive-foreground: #ffffff;
+    --sidebar-accent-foreground: #e8e5d8;
+    --sidebar-primary-foreground: #ffffff;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Card glow effect */
+.card-glow {
+  box-shadow: 0 0 15px -3px rgba(201, 100, 66, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px -3px rgba(201, 100, 66, 0.35);
+}
+
+/* Hide number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
+/* Chart animation overrides */
+.recharts-wrapper {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: var(--muted-foreground) !important;
+  font-size: 12px !important;
+}
+
+/* Smooth transitions */
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Date picker — icon matches text color, hover = primary */
+input[type="date"] {
+  color-scheme: light;
+}
+
+.dark input[type="date"] {
+  color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Landing page animated background */
+@keyframes float1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(60px, 40px) scale(1.05);
+  }
+
+  66% {
+    transform: translate(-30px, 20px) scale(0.95);
+  }
+}
+
+@keyframes float2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(-50px, -30px) scale(1.08);
+  }
+
+  66% {
+    transform: translate(40px, -20px) scale(0.92);
+  }
+}
